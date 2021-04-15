@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    cursor: url('Images/craig.png'), auto;
+}
+
+body{
+    background-color: rgb(43,43,43);
+}
+
+h1{
+    color: rgb(197,0,0);
+}
+
+header{
+    width: 100%;
+    padding-bottom: 25px;
+    flex-direction: column;
+    cursor: url('Images/craig.png'), auto;
+}
+
+button.vote-btn{
+    background-color: rgb(197,0,0);
+    color: white;
+    cursor: url('Images/craig.png'), auto;
+}
+
+button.vote-btn :hover{
+    background-color: white;
+    color: rgb(197,0,0);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
