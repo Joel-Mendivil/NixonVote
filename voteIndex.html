@@ -12,20 +12,21 @@
 
 <body>
     <header class="flex">
-        <center><h1>Vote on a President</h1></center>
+        <center><h1 id="noContextMenu">Vote on a President</h1></center>
     </header>
     <center>
         <button class="vote-btn" id="nixon">
-            <img src="Images/nixon.jpeg" width="250px" height="300px">
+            <img src="Images/nixon.jpeg" id="betterNixon" width="250px" height="300px" onmouseover="nixonMouseOver()" onmouseout="nixonMouseLeave()">
             <br>
             <h2>Richard Nixon</h2>
         </button>
         <button class="vote-btn" id="mcgovern">
-            <img src="Images/mcgovern.png" width="250px" height="300px">
+            <img src="Images/mcgovern.png" id="betterMcGovern" width="250px" height="300px" onmouseover="mcGovernMouseOver()" onmouseout="mcGovernMouseLeave()">
             <br>
             <h2>George McGovern</h2>
         </button>
     </center>
+    <
 </body>
 
 </html>
