@@ -13,6 +13,10 @@ h1{
     color: rgb(197,0,0);
 }
 
+p{
+    color: white;
+}
+
 header{
     width: 100%;
     padding-bottom: 25px;
@@ -35,4 +39,4 @@ button.vote-btn :hover{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}

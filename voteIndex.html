@@ -12,21 +12,40 @@
 
 <body>
     <header class="flex">
-        <center><h1 id="noContextMenu">Vote on a President</h1></center>
+        <center>
+            <h1 id="noContextMenu">Vote on a President</h1>
+        </center>
     </header>
     <center>
-        <button class="vote-btn" id="nixon">
-            <img src="Images/nixon.jpeg" id="betterNixon" width="250px" height="300px" onmouseover="nixonMouseOver()" onmouseout="nixonMouseLeave()">
+        <button class="vote-btn" id="nixon" onmousemove="showCoords(event)" onmouseout="clearCoor()" id="rectange">
+            <img src="Images/nixon.jpeg" id="betterNixon" width="250px" height="300px" onmouseover="nixonMouseOver()"
+                onmouseout="nixonMouseLeave()">
             <br>
             <h2>Richard Nixon</h2>
         </button>
-        <button class="vote-btn" id="mcgovern">
-            <img src="Images/mcgovern.png" id="betterMcGovern" width="250px" height="300px" onmouseover="mcGovernMouseOver()" onmouseout="mcGovernMouseLeave()">
+        <button class="vote-btn" id="mcgovern" onmousemove="showCoords(event)" onmouseout="clearCoor()" id="rectange">
+            <img src="Images/mcgovern.png" id="betterMcGovern" width="250px" height="300px"
+                onmouseover="mcGovernMouseOver()" onmouseout="mcGovernMouseLeave()">
             <br>
             <h2>George McGovern</h2>
         </button>
     </center>
-    <
+
+    <center>
+        <p>Mouse over the buttons above to get the horizontal and vertical coordinates of your mouse pointer.</p>
+        <p id="demo"></p>
+    </center>
+
+    <center>
+        <p>If you want the coordinates to stop calculating, click the button to remove its event handler.</p>
+        <button onclick="removeHandler()" id="myBtn">Try it</button>
+    </center>
+
+    <center>
+        <div id="div1">
+            <p onclick="thisFunction(this, 'rgb(197,0,0)')">Click on me to turn crimson red. :)</p>
+        </div>
+    </center>
 </body>
 
 </html>
