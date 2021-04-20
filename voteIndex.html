@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nixon Vs. McGovern</title>
     <link href="voteIndex.css" rel="stylesheet">
-    <script src="voteIndex.js"></script>
 </head>
 
 <body>
@@ -17,35 +16,32 @@
         </center>
     </header>
     <center>
-        <button class="vote-btn" id="nixon" onmousemove="showCoords(event)" onmouseout="clearCoor()" id="rectange">
+        <button class="vote-btn" id="nixon" onmousemove="showCoords(event)" onmouseout="clearCoor()">
             <img src="Images/nixon.jpeg" id="betterNixon" width="250px" height="300px" onmouseover="nixonMouseOver()"
                 onmouseout="nixonMouseLeave()">
             <br>
-            <h2>Richard Nixon</h2>
+            <h2 onclick="thisFunction(this, 'rgb(0,0,0)')">Richard Nixon</h2>
         </button>
-        <button class="vote-btn" id="mcgovern" onmousemove="showCoords(event)" onmouseout="clearCoor()" id="rectange">
+        <button class="vote-btn" id="mcgovern" onmousemove="showCoords(event)" onmouseout="clearCoor()">
             <img src="Images/mcgovern.png" id="betterMcGovern" width="250px" height="300px"
                 onmouseover="mcGovernMouseOver()" onmouseout="mcGovernMouseLeave()">
             <br>
-            <h2>George McGovern</h2>
+            <h2 onclick="thisFunction(this, 'rgb(0,0,0)')">George McGovern</h2>
         </button>
     </center>
 
     <center>
-        <p>Mouse over the buttons above to get the horizontal and vertical coordinates of your mouse pointer.</p>
+        <p id="noContextMenu">Mouse over the buttons above to get the horizontal and vertical coordinates of your mouse pointer.</p>
         <p id="demo"></p>
     </center>
 
     <center>
-        <p>If you want the coordinates to stop calculating, click the button to remove its event handler.</p>
-        <button onclick="removeHandler()" id="myBtn">Try it</button>
-    </center>
-
-    <center>
         <div id="div1">
-            <p onclick="thisFunction(this, 'rgb(197,0,0)')">Click on me to turn crimson red. :)</p>
+            
         </div>
     </center>
+
+    <script src="voteIndex.js"></script>
 </body>
 
 </html>
