@@ -6,7 +6,7 @@ window.onload = () => {
 
     var element = document.getElementById("div1");
     element.appendChild(para);
-    alert("Things may not look as what it may seem! You've been warned.")
+    alert("MEME ALERT!!! This is going to be good :)")
 }
 
 //Calculates the position of the mouse pointer when hovering over the vote buttons
@@ -40,9 +40,9 @@ document.getElementById('mcgovern').addEventListener("click", mcGovernVote)
 
 function mcGovernVote(){
     alert("You have voted for Nixon. Thank you :)");
-    alert("SIKE!!!! REJECT PRESIDENTS!! EMBRACE CRAIG");
+    alert("SIKE!!!! REJECT PRESIDENTS!! EMBRACE DESPACITO");
     document.getElementById('mcgovern').removeEventListener("click", mcGovernVote);
-    document.body.style.backgroundImage = "url('Images/craig.png')";
+    document.body.style.backgroundImage = "url('Images/desperado.png')";
 }
 
 //Prevents the title of the page from being right clicked
